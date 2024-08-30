@@ -47,6 +47,12 @@ public class Frame extends JFrame {
         Tile pantsTile = new Tile("PANTS", 150, 200);
         bottomPane.add(pantsTile);
 
+        JPanel addTilePane = new JPanel();
+        addTilePane.setPreferredSize(new Dimension(100, 100));
+        RoundButton addTile = new RoundButton(20, "+");
+        addTilePane.add(addTile);
+        topPane.add(addTilePane);
+
         MenuBar menuBar = new MenuBar();
         setJMenuBar(menuBar);
 
